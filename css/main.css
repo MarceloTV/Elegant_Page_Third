@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  --fucsia: #e30052;
+  --pink: #ffc0cb;
+  --cake_blue: #779ecb;
+  --red_pantone: #d22809;
+  --black_a: #18171c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+/*___HEADER___*/
+
+header {
+  padding: 20px 0;
+}
+
+header .container {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container .logo {
+  font-size: 2em;
+}
+
+header .container .logo span {
+  color: var(--fucsia);
+}
+
+header .container nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  margin-right: 50px;
+}
+
+header .container nav a:hover {
+  color: var(--fucsia);
+  transition: all ease 0.3s;
+}
+
+header .container nav a:nth-child(4) {
+  margin: 0;
+}
+
+header .container .icons i {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+header .container .icons i:nth-child(1):hover {
+  transition: all ease 0.3s;
+  color: var(--cake_blue);
+}
+
+header .container .icons i:nth-child(2):hover {
+  transition: all ease 0.3s;
+  color: var(--red_pantone);
+}
+
+header .container .icons i:nth-child(3):hover {
+  transition: all ease 0.3s;
+  color: gray;
+}
+
+header .container .icons i:nth-child(3) {
+  margin-right: 0;
+}
+
+header .container .mobile {
+  display: none;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+/*__MAIN__*/
+
+main {
+  width: 100%;
+}
+
+main .container {
+  width: 90%;
+  margin: auto;
+}
+
+/*__MAIN_INTRO__*/
+
+main .container .intro {
+  background: var(--pink);
+  display: flex;
+  justify-content: space-evenly;
+  border-radius: 16px;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+main .container .intro .entry h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+main .container .intro .entry .input {
+  background: white;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container .intro .entry .input input {
+  width: 80%;
+  border: none;
+  font-size: 1em;
+}
+
+main .container .intro .entry .input input:focus {
+  outline: none;
+}
+
+main .container .intro .entry .input input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+main .container .intro .entry .input i {
+  margin-right: 10px;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.5em;
+}
+
+main .container .intro img {
+  width: 300px;
+  height: 300px;
+  background: yellow;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+/*__MAIN_SHOP__*/
+
+main .container .shop .functions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+main .container .shop .functions .categories a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+main .container .shop .functions .categories a:nth-child(5) {
+  margin-right: 0;
+  color: var(--fucsia);
+}
+
+main .container .shop .functions .arrows i {
+  font-size: 2em;
+  cursor: pointer;
+}
+
+main .container .shop .functions .arrows i:hover {
+  transition: ease all 0.3s;
+  color: var(--fucsia);
+}
+
+main .container .shop .functions .arrows i:nth-child(1) {
+  margin-right: 20px;
+}
+
+/*__MAIN_SHOP_PRODUCTS__*/
+
+main .container .shop .products {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+main .container .shop .products .product {
+  overflow: hidden;
+}
+
+main .container .shop .products .product h4 {
+  color: rgba(0, 0, 0, 0.4);
+  margin-bottom: 5px;
+}
+
+main .container .shop .products .product p {
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+main .container .shop .products .product img {
+  width: 100%;
+  height: 300px;
+  padding: 10px;
+  object-fit: contain;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/*__MAIN_AD__*/
+
+main .container .ad {
+  padding: 10px;
+  width: 95%;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 120px;
+  height: 250px;
+  margin-bottom: 30px;
+}
+
+main .container .ad .text h2 {
+  letter-spacing: 5px;
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+main .container .ad .text p {
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+main .container .ad .text .btn {
+  padding: 15px 40px;
+  background: #ff74af;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+main .container .ad img {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  bottom: 50px;
+}
+
+/*__FOOTER__*/
+
+footer {
+  width: 100%;
+  background: var(--black_a);
+  color: white;
+}
+
+footer .container {
+  padding: 60px 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+footer .container .social h2 {
+  margin-bottom: 20px;
+}
+
+footer .container .social h2 span {
+  color: var(--fucsia);
+}
+
+footer .container .social .icons {
+  margin-bottom: 20px;
+}
+
+footer .container .social .icons i {
+  margin-right: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+footer .container .menus > div {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 60px;
+}
+
+footer .container .menus > div:nth-child(3) {
+  margin-right: 0;
+}
+
+footer .container .menus div h2 {
+  margin-bottom: 20px;
+}
+
+footer .container .menus div nav a {
+  color: white;
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+footer .container .menus .links nav a:nth-child(5),
+footer .container .menus .shop nav a:nth-child(4),
+footer .container .menus .contact nav a:nth-child(3) {
+  margin-bottom: 0;
+}
+
+/*__MOBILE_MENU__*/
+
+.mobile_menu {
+  transition: all ease 0.3s;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 10;
+  left: -100%;
+}
+
+.mobile_menu .container {
+  width: 90%;
+  padding: 20px 0;
+  margin: auto;
+}
+
+.mobile_menu .container .header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.mobile_menu .container .header h2 {
+  font-size: 2.5em;
+}
+
+.mobile_menu .container .header h2 span {
+  color: var(--fucsia);
+}
+
+.mobile_menu .container .header i {
+  font-size: 2em;
+}
+
+.mobile_menu .container .icons {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.mobile_menu .container .icons i {
+  font-size: 2em;
+}
+
+.mobile_menu .container .icons i:nth-child(1) {
+  color: var(--cake_blue);
+}
+
+.mobile_menu .container .icons i:nth-child(2) {
+  color: var(--red_pantone);
+}
+
+.mobile_menu .container .icons i:nth-child(3) {
+  color: gray;
+}
+
+.mobile_menu .container .menu a {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+.mobile_menu .container .menu hr {
+  margin-bottom: 20px;
+}
+
+.show {
+  transition: all ease 0.3s;
+  left: 0;
+}
